@@ -60,16 +60,58 @@ p.updates{
   font-size: 135%;
 }
 /* Applies this style to the entire page */
-div.nav{
-  align-items: center;
-  vertical-align: text-top;
-  font-family: : "Courier New", monospace;
-  margin-right: 60%;
-  border-color: Olive;
-  border-width: medium;
-  border-radius: 7px;
+.navBar {
+  overflow: hidden;
+  background-color: #c4471a;
 }
-* {
+/* This is for the MOBILE STACKED NAVBAR */
+.navBar .icon{
+  display: none;
+}
+
+/* This is the actual navbar nd its links/text */
+div.navBar a{
+  display: inline;
+  padding-left: 3%;
+  padding-right: 3%;
+  float:left;
+  display: block;
+  font-family: 'Quicksand', sans-serif;
+  color: Azure;
+  text-align: center;
+  text-decoration: none;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background-color: #ff3838;
+}
+/* This is the color of the NAVBAR */
+div.navBar {
+  background-color: #ff3838;
+}
+
+/* This is so it changes when you hover over the navBar */
+div.navBar a:hover{
+  background-color: #ff8f8f;
+  color: #631a00;
+}
+/* This is the color of the navBar when your not hovering over it */
+div.navBar a.active{
+  color: #631a00;
+  background-color: #fa845a;
+}
+/* This is for the navBar, keeps it in place */
+.top-container{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 8000;
+}
+/* End NavBar, Start Home Page */
+
+*{
   box-sizing: border-box;
 }
 
